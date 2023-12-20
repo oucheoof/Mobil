@@ -17,13 +17,13 @@ class RotaryDial {
 
 		this.size = this.canvasSize - 2;
 
-		this.discFillColor = discFillColor || 'gray';
+		this.discFillColor = discFillColor || 'silver';
 
-		this.discStrokeColor = discStrokeColor || 'yellow';
+		this.discStrokeColor = discStrokeColor || '#A9A9A9';
 
-		this.circlesFillColor = circlesFillColor || 'black';
+		this.circlesFillColor = circlesFillColor || '#36454F';
 
-		this.circlesStrokeColor = circlesStrokeColor || 'gray';
+		this.circlesStrokeColor = circlesStrokeColor || '#A9A9A9';
 
 		this.circlesHighlightColor = circlesHighlightColor || 'green';
 
