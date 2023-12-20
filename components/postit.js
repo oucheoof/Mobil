@@ -8,8 +8,6 @@ function renderPostit() {
         <li>#1890</li>
         <li>#1930</li>
         <li>#1990</li>
-        <li>#2007</li>
-        <li>#2058</li>
     </ul>
 `;
 }
