@@ -5,10 +5,10 @@ function renderPostit() {
     div.id = "postit";
     div.innerHTML = `
     <ul>
-        <li>#2001</li>
-        <li>#2002</li>
-        <li>#2003</li>
-        <li>#2004</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
     </ul>
 `;
 }

@@ -180,14 +180,38 @@ class RotaryDial {
 	}
 
 	result() {
-
-		if (this.number)
-
-			this.callback(this.number % 10)
-
-		this.clear()
-
+		if (this.number) {
+			this.callback(this.number % 10);
+			
+			// Retrieve the selected number
+			const selectedNumber = this.number % 10;
+	
+			// Define the URL to open based on the selected number
+			let url = '';
+			switch(selectedNumber) {
+				case 1:
+					url = '/embla/embla.html';
+					break;
+				case 2:
+					url = '/hilda/hilda.html';
+					break;
+				case 3:
+					url = '/pontus/pontus.html';
+					break;
+				case 4:
+					url = '/stephen/stephen.html';
+					break;
+				// Add additional cases as needed
+			}
+	
+			// If a URL has been set, open it
+			if (url) {
+				window.open(url, '_blank');
+			}
+		}
+		this.clear();
 	}
+		
 
 	isClicking(e) {
 
