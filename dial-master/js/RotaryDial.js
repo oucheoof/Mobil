@@ -190,16 +190,16 @@ class RotaryDial {
 			let url = '';
 			switch(selectedNumber) {
 				case 1:
-					url = '/embla/embla.html';
+					url = 'embla/embla.html';
 					break;
 				case 2:
-					url = '/hilda/hilda.html';
+					url = 'hilda/hilda.html';
 					break;
 				case 3:
-					url = '/pontus/pontus.html';
+					url = 'pontus/pontus.html';
 					break;
 				case 4:
-					url = '/stephen/stephen.html';
+					url = 'stephen/stephen.html';
 					break;
 				// Add additional cases as needed
 			}
