@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "";
+    src: url("");
+}
+
+body {
+    margin: 0;
+}
+
+
+
+/* BOX 1 */
+#one {
+    height: 100vh;
+    background-color: black;
+}
+
+
+/* BOX 2 */
+#two {
+    height: 100vh;
+    background-color: #677668;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 8fr 2fr 6fr;
+}
+
+
+/* BOX 3 */
+#three {
+    height: 100vh;
+    background-color: rgb(150, 86, 150);
+}
+
+
+/* BOX 4 */
+#four {
+    height: 100vh;
+    background-color: black;
+}
