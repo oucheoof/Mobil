@@ -1,0 +1,55 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100%; /* Ensures the minimum height for the body is the full viewport */
+    overflow-x: hidden; /* Hides horizontal scrollbar */
+    overflow-y: auto; /* Enables vertical scrolling */
+    font-family: 'Bebas Neue', sans-serif; /* Applies the font globally */
+}
+
+.fullscreen-gif {
+    position: absolute; /* Changed from fixed to absolute */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Ensures the GIF only takes up the first viewport */
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    /* Removed animation for simplicity */
+}
+
+.scroll-down-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    color: white;
+    z-index: 2;
+    cursor: pointer; /* Indicates this is a clickable or interactive element */
+    animation: bounce 1.5s infinite;
+}
+
+.page {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Remaining styles are fine */
