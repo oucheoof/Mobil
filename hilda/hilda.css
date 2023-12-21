@@ -203,10 +203,31 @@ body {
 
 
 /* BOX 4 */
+#four {
+    background-image: url("hildas_images/evolution.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+#paragraf5 {
+    font-size: 35px;
+    color: #575757;
+    margin-top: 250px;
+    border-bottom: 10px solid #575757;
+}
+
+#paragraf5 h1 {
+    margin: 0;
+}
 
 /* BOX 5 */
-#four {
+#five {
     height: 100vh;
     background-color: black;
 }
