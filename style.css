@@ -5,5 +5,10 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    background-color: rgb(218, 51, 129);
+   
+    background-image: url(images/redphone.jpg);
+    background-size: 4800px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
