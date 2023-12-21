@@ -204,9 +204,9 @@ body {
 
 /* BOX 4 */
 #four {
-    background-image: url("hildas_images/evolution.png");
+    background-image: url("hildas_images/background_hilda.jpeg");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 
     height: 100vh;
@@ -216,11 +216,23 @@ body {
     position: relative;
 }
 
+#background_evolution {
+    background-image: url("hildas_images/nedladdning.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    height: 700px;
+    width: 700px;
+}
+
 #paragraf5 {
-    font-size: 35px;
+    font-size: 30px;
     color: #575757;
-    margin-top: 250px;
-    border-bottom: 10px solid #575757;
+    margin-top: 200px;
+    margin-left: 150px;
+    border-bottom: 8px solid #575757;
+    text-align: center;
 }
 
 #paragraf5 h1 {
