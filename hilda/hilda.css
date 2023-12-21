@@ -1,15 +1,9 @@
-@font-face {
-    font-family: "";
-    src: url("");
-}
-
 body {
     margin: 0;
 }
 
 /* BOX 1 */
 #one {
-
     height: 100vh;
     background-color: black;
 
@@ -26,7 +20,6 @@ body {
     font-family: sans-serif;
     font-size: 8vh;
     margin: 0;
-
 }
 
 #second_h1 {
@@ -39,7 +32,7 @@ body {
     margin: 0;
 }
 
-.bounce-arrow {
+#bounce-arrow {
     width: 0;
     height: 0;
     border-left: 20px solid transparent;
@@ -66,14 +59,7 @@ body {
 
 /* BOX 2 */
 #two {
-    /*background-image: url("hildas_images/background_hilda.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(103, 118, 104, 0.5);
-*/
     height: 100vh;
-
-
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -110,11 +96,34 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
 
-
     grid-column: 2/span 3;
     grid-row: 2/ span 8;
 }
 
+#bounce-arrow2 {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid #949a38;
+    position: relative;
+    animation: bounce 1s infinite;
+
+    grid-column: 9;
+    grid-row: 7;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 20px;
+    }
+}
 
 /* BOX 3 */
 #three {
@@ -129,13 +138,11 @@ body {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 10;
-
     position: absolute;
     /* Position absolute for the element you want on top */
 
-    left: 400px;
-    width: 100%;
+    left: 600px;
+    width: 50%;
     height: 100vh;
     z-index: 2;
 }
@@ -167,7 +174,38 @@ body {
     padding: 10px;
 }
 
+#bounce-arrow3 {
+    width: 0;
+    height: 0;
+    right: 100px;
+    bottom: 100px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid #ffffff;
+    position: absolute;
+    animation: bounce 1s infinite;
+
+    z-index: 2;
+    margin: 20px;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 20px;
+    }
+}
+
+
 /* BOX 4 */
+
+
+/* BOX 5 */
 #four {
     height: 100vh;
     background-color: black;
