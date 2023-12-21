@@ -99,6 +99,7 @@ body {
     align-items: center;
     border: 1px solid black;
     box-shadow: 0 0 40px 5px var(--blackColor);
+
 }
 
 #phoneItems {
@@ -109,6 +110,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #phoneItems p {
@@ -132,12 +137,21 @@ body {
 #phoneItems:active {
     box-shadow: 0 0 40px 1000px var(--whiteColor);
     z-index: 0.9;
-
+    background-image: url(./images/arm-removebg-preview.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    overflow: visible;
 }
 
 #phoneItems:active p {
     display: none;
 }
+
+
+
 
 /*#s1TextContainer {
     position: absolute;
