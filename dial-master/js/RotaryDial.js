@@ -206,7 +206,7 @@ class RotaryDial {
 	
 			// If a URL has been set, open it
 			if (url) {
-				window.open(url, '_blank');
+				window.open(url, '_self');
 			}
 		}
 		this.clear();
