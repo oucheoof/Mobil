@@ -4,13 +4,13 @@ body {
 
 
 #first {
-    height: 100vh;
+    height: 10vh;
     width: 100vw;
     background-color: blue;
 }
 
 #second {
-    height: 100vh;
+    height: 10vh;
     width: 100vw;
     background-color: rgb(255, 0, 85);
 }
@@ -22,16 +22,30 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    position: relative;
 }
 
 #photobooth {
-    width: 200px;
-    height: 300px;
-    background-color: blueviolet;
-    transition-duration: 1s;
+    width: 500px;
+    height: 700px;
+    transition-duration: 2s;
+    background-image: url(../images/phone_booth.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
 }
 
 #photobooth:hover {
-    width: 230px;
-    height: 330px;
+    width: 960px;
+    height: 860px;
+}
+
+footer p {
+    color: blue;
+    font-size: 16px;
+    font-family: helvetica;
+    position: absolute;
+    top: 100px;
 }
