@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
    
-    background-image: url(images/redphone.jpg);
+    background-image: url(images/phone_red.jpg);
     background-size: 4800px;
     background-repeat: no-repeat;
     background-position: center;
