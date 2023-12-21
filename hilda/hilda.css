@@ -203,16 +203,10 @@ body {
 
 
 /* BOX 4 */
-#four {
-    background-image: url("hildas_images/background_hilda.jpeg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
+
 
 /* BOX 5 */
-#five {
+#four {
     height: 100vh;
     background-color: black;
 }
