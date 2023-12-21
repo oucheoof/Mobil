@@ -17,23 +17,23 @@ class RotaryDial {
 
 		this.size = this.canvasSize - 2;
 
-		this.discFillColor = discFillColor || 'silver';
+		this.discFillColor = discFillColor || '#9d9d9df7';
 
-		this.discStrokeColor = discStrokeColor || '#A9A9A9';
+		this.discStrokeColor = discStrokeColor || '#2b2936';
 
-		this.circlesFillColor = circlesFillColor || '#36454F';
+		this.circlesFillColor = circlesFillColor || '#403a46';
 
-		this.circlesStrokeColor = circlesStrokeColor || '#A9A9A9';
+		this.circlesStrokeColor = circlesStrokeColor || '#898989';
 
-		this.circlesHighlightColor = circlesHighlightColor || 'green';
+		this.circlesHighlightColor = circlesHighlightColor || '#696c7a';
 
 		this.textFillColor = textFillColor || 'white';
 
 		this.textStrokeColor = textStrokeColor || 'transparent';
 
-		this.arrowFillColor = arrowFillColor || 'red';
+		this.arrowFillColor = arrowFillColor || 'silver';
 
-		this.arrowStrokeColor = arrowStrokeColor || 'yellow';
+		this.arrowStrokeColor = arrowStrokeColor || 'grey';
 
 		this.canvas = document.createElement('canvas');
 
@@ -55,7 +55,7 @@ class RotaryDial {
 
 		this.c = this.canvas.getContext('2d');
 
-		this.c.font = this.size * 0.08 + "px Arial";
+		this.c.font = this.size * 0.07 + "px Arial";
 
 		this.c.textAlign = "center";
 
@@ -206,7 +206,7 @@ class RotaryDial {
 	
 			// If a URL has been set, open it
 			if (url) {
-				window.open(url, '_blank');
+				window.open(url, '_self');
 			}
 		}
 		this.clear();

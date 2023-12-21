@@ -1,18 +1,18 @@
 #postit {
-    width: 300px;
-    height: 300px;
-    background-color: yellow;
+    width: 248px;
+    height: 100px;
     position: absolute;
-    top: 250px;
-    right: 100px;
-    box-shadow: 15px 15px;
-    background-image: url(../images/postittexture2.webp);
+    top: 450px;
+    background-image: url(../images/lapp.jpg);
     background-position: center;
+    background-size: cover;
     font-family: 'Kalam';
+    border-radius: 1px 1px 8px 8px;
+    box-shadow: 1px 9px 19px 2px rgba(0,0,0,0.55);
 }
 
 #postit>* {
 
-    color: rgb(73, 71, 71);
-    font-size: 1.8vw;
+    color: rgb(56, 55, 55);
+    font-size: 15px;
 }

@@ -6,7 +6,7 @@ const init = function () {
 
 	const btn = document.createElement('button');
 
-	btn.innerText = "Clear";
+	btn.innerText = "CLEAR";
 
 	btn.addEventListener("click", e => {
 		input.value = "";
