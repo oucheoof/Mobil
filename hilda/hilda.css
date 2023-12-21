@@ -213,6 +213,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: start;
+    position: relative;
 }
 
 #paragraf5 {
@@ -224,6 +225,30 @@ body {
 
 #paragraf5 h1 {
     margin: 0;
+}
+
+#bounce-arrow4 {
+    width: 0;
+    height: 0;
+    left: 1150px;
+    margin: 20px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid rgb(0, 0, 0);
+    position: absolute;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 20px;
+    }
 }
 
 /* BOX 5 */
