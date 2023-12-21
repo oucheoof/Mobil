@@ -6,28 +6,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Full-Screen Video Page</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+
 </head>
 <body>
 
     <div id="page1">
         <img src="giphy.gif" alt="Description of GIF" class="fullscreen-gif">
-        <div class="centered-text">This generation's mobile phones</div>
+        <div class="centered-text">Avarge phone usage</div>
         <div class="scroll-down-arrow">&#x2193;</div>
     </div>
 
     <div id="page2">
         <div class="affordance-content">
-            <div class="affordance-text">
-                <!-- Add your text about affordance here -->
-                <p>Your text goes here...</p>
+            <div class="background-blue"></div>
+            <img src="gipphy.gif" alt="Description of GIF" class="fullscreen-gif-2">
+            
+
+            <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+                <p>Average Phone Usage Time (hours)</p>
+                <canvas id="myChart"></canvas>
+                <a href="https://techjury.net/blog/how-much-time-does-the-average-american-spend-on-their-phone/#:~:text=,on%20their%20mobile%20phones%20daily">Source</a>
             </div>
-            <div class="affordance-image">
-                <!-- Replace with your phone image -->
-                <img src="phone.jpg" alt="Phone Image">
-            </div>
+
+
         </div>
+
+
     </div>
     
+    <div id="page3">
+        <!-- Content for Page 3 goes here -->
+        <p>Content for Page 3...</p>
+    </div>
 
 
     <!-- Add JavaScript for scrolling interaction -->

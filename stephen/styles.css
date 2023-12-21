@@ -17,6 +17,21 @@ body, html {
     z-index: -1;
 }
 
+#page2{
+    background-color: rgb(10, 10, 10)
+}
+
+.fullscreen-gif-2 {
+    position: absolute; /* Changed from fixed to absolute */
+    top: 0;
+    left: 50%;
+    right: 50%;
+    width: 50%;
+    height: 100vh; /* Ensures the GIF only takes up the first viewport */
+    object-fit: cover;
+    z-index: 3;
+}
+
 .centered-text {
     position: absolute;
     top: 50%;
@@ -88,3 +103,20 @@ body, html {
     position: relative; /* This will help position inner elements */
 }
 
+#page3 {
+    background-color: black; /* Sets the background to black */
+    color: white; /* Sets the text color to white for contrast */
+    min-height: 100vh; /* Ensures the page takes up the full viewport height */
+    width: 100%;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    /* Add any additional styling as needed */
+}
+
+a{
+    color: white;
+}
+p{
+    color: white;
+}
