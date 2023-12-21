@@ -17,7 +17,6 @@ body, html {
     z-index: -1;
 }
 
-
 .centered-text {
     position: absolute;
     top: 50%;
@@ -27,8 +26,14 @@ body, html {
     font-size: 4em;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     z-index: 2;
-    /* Removed animation for simplicity */
+    animation: fadeIn 2s ease-out forwards; /* Run only once and end at the last keyframe */
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 
 .scroll-down-arrow {
     position: absolute;
@@ -42,14 +47,44 @@ body, html {
     animation: bounce 1.5s infinite;
 }
 
-.page {
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+@keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-20px); }
 }
 
-/* Remaining styles are fine */
+#page2 {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height of the viewport */
+    padding: 50px; /* Add some padding around the content */
+}
+
+.affordance-content {
+    width: 80%; /* Adjust as per your design */
+    display: flex;
+    justify-content: space-between; /* Space out the text and image */
+}
+
+.affordance-text {
+    flex: 1; /* Takes half of the available space */
+    padding-right: 20px; /* Spacing between text and image */
+}
+
+.affordance-image {
+    flex: 1; /* Takes half of the available space */
+    display: flex;
+    justify-content: center; /* Center align the image */
+}
+
+.affordance-image img {
+    max-width: 100%; /* Ensures the image is not bigger than its container */
+    height: auto;
+}
+
+#page1, #page2 {
+    min-height: 100vh; /* 100% of the viewport height */
+    width: 100%;
+    position: relative; /* This will help position inner elements */
+}
+
