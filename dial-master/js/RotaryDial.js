@@ -23,7 +23,7 @@ class RotaryDial {
 
 		this.circlesFillColor = circlesFillColor || '#403a46';
 
-		this.circlesStrokeColor = circlesStrokeColor || '#A9A9A9';
+		this.circlesStrokeColor = circlesStrokeColor || '#898989';
 
 		this.circlesHighlightColor = circlesHighlightColor || '#696c7a';
 
