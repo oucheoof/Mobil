@@ -17,9 +17,9 @@ input {
 	font-family: 'Kalam', cursive;
 	font-family: 'Orbitron', sans-serif;
 	border-radius: 10px;
-	box-shadow: 3px 3px;
 	font-size: 10px;
 	margin-bottom: 165px;
+	
 	
 }
 
@@ -31,7 +31,6 @@ button {
 	border-radius: 10px;
 	font-family: 'helvetica';
 	font-weight: 600;
-	box-shadow: 3px 3px;
 	background-color: #fffefe80;
 	font-size: 10px;
 }
