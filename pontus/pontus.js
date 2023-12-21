@@ -12,7 +12,7 @@ phoneItems.addEventListener('mousedown', function () {
     const currentImage = imagesArray[currentIndex];
     phoneItems.style.backgroundImage = `url('${currentImage}')`;
 
-    currentIndex = (currentIndex + 1) % imagesArray.length; // Move to the next image index
+    currentIndex = (currentIndex + 1) % imagesArray.length;
 
     const removeImage = () => {
         phoneItems.style.backgroundImage = 'none';
@@ -26,7 +26,7 @@ phoneItems.addEventListener('mousedown', function () {
 
 
 
-//call function
+
 
 
 

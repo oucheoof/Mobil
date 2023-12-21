@@ -12,6 +12,11 @@
     src: url(./Fonts/Orbitron-Black.ttf);
 }
 
+@font-face {
+    font-family: orbitronbread;
+    src: url(./Fonts/Orbitron-SemiBold.ttf);
+}
+
 
 * {
     box-sizing: border-box;
@@ -23,6 +28,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(./images/jr-korpa-9XngoIpxcEo-unsplash.jpg);
+    background-size: cover;
 
 }
 
@@ -31,11 +38,7 @@ body {
     box-shadow: 0 0 40px 20px var(--pinkColor);
 }
 
-/*.textContainer {
-    width: 500px;
-    height: 300px;
 
-}*/
 
 /*page 1*/
 .section1 {
@@ -43,9 +46,12 @@ body {
     height: 150vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-image: url(./images/jr-korpa-9XngoIpxcEo-unsplash.jpg);
     background-position: center;
     background-size: cover;
+    flex-direction: column;
+    gap: 200px;
 
 }
 
@@ -55,14 +61,11 @@ body {
 }
 
 .section2 {
-    background-color: var(--blackColor);
+
     height: 150vh;
 }
 
-.section2:hover {
-    box-shadow: 0 0 40px 50px var(--pinkColor);
-    transition: box-shadow 3s;
-}
+
 
 .section3 {
     height: 150vh;
@@ -99,6 +102,7 @@ body {
     align-items: center;
     border: 1px solid black;
     box-shadow: 0 0 40px 5px var(--blackColor);
+    border: 2px solid black;
 
 }
 
@@ -114,6 +118,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+
 }
 
 #phoneItems p {
@@ -147,27 +152,77 @@ body {
 }
 
 #phoneItems:active p {
-    display: none;
+    opacity: 0;
+    transition-delay: 1ms;
 }
 
 
-
-
-/*#s1TextContainer {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-image: url(./images/brain-removebg-preview.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: none;
-
-}*/
-
-/* #phoneItems:active #s1TextContainer {
-    display: inherit;
-    z-index: 1;
-}*/
-
 /*section2*/
+
+.section2 {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2 .textContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+
+    height: 200px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.textItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    flex-grow: 1;
+    background-color: var(--redColor);
+    width: 450px;
+    font-family: "orbitronbread";
+    opacity: 0;
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+#image1 {
+    background-image: url(./images/arm-removebg-preview.png);
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#image2 {
+    background-image: url(./images/brain-removebg-preview.png);
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#image3 {
+    background-image: url(./images/eye-removebg-preview.png);
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.textContainer:hover .textItem {
+    opacity: unset;
+    transition: 1s;
+}
