@@ -11,7 +11,68 @@
 
     <section id="first"></section>
     <section id="second"></section>
-
+    <div id="green">
+        <div id="">
+          <div id="apply"></div>
+          <div id="rectangles">
+            <!-- Här kan du generera rektanglar med JavaScript om du vill -->
+            <div class="rectangle" onclick="showNewDiv(this)"><p>take your chance</p></div>
+            <div class="rectangle" onclick="showNewDiv(this)"><p>take your chance</p></div>
+            <div class="rectangle" onclick="showNewDiv(this)"><p>take your chance</p></div>
+            <div class="rectangle" onclick="showNewDiv(this)"><p>take your chance</p></div>
+            <div class="rectangle" onclick="showNewDiv(this)"><p>take your chance</p></div>
+            <div class="rectangle" onclick="showNewDiv(this)"><p>take your chance</p></div>
+          </div>
+    
+          <!-- Ny div som visas vid klick -->
+          <div id="newDiv" class="new-div">
+            <p>To know if someone was on the other end of the phone, someone had to sit there to connect the call. There were manual telephone exchanges with operators in various central offices handling the connection for calls. As the use and availability of the telephone increased, the need for telephone operators became greater and the switchboard eventually became so large that it came to be called "the world's largest machine". 
+            </p>
+            <div id="applyButton" onclick="showStep2()">APPLY</div>
+          </div>
+    
+          <!-- Div för steg 2 -->
+          <div id="steg2">
+            <!-- Innehåll för steg 2 här -->
+          </div>
+    
+          <script>
+            var selectedRectangle = null; // Håller reda på den valda rektangeln
+          
+            function showNewDiv(rectangle) {
+              // Kolla om en rektangel redan är vald
+              if (selectedRectangle && selectedRectangle !== rectangle) {
+                // Återställ den tidigare valda rektangeln och göm newDiv
+                selectedRectangle.style.transform = 'translateY(0)';
+                document.getElementById('newDiv').style.display = 'none';
+              }
+          
+              // Skjut ner den klickade rektangeln med 20px
+              rectangle.style.transform = 'translateY(20px)';
+              // Visa newDiv efter en kort fördröjning
+              setTimeout(function () {
+                document.getElementById('newDiv').style.display = 'block';
+              }, 500);
+          
+              // Uppdatera den valda rektangeln
+              selectedRectangle = rectangle;
+            }
+          
+            function showStep2() {
+              // Återställ transformationen för den valda rektangeln
+              if (selectedRectangle) {
+                selectedRectangle.style.transform = 'translateY(0)';
+              }
+              
+              // Här kan du lägga till logik för att visa steg 2
+              // Till exempel: document.getElementById('steg2').style.display = 'block';
+              
+              // Hide newDiv
+              document.getElementById('newDiv').style.display = 'none';
+            }
+          </script>
+        </div>
+      </div>
 
 
     <!-- html för photo booth, nedan-->
