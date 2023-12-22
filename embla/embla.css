@@ -6,17 +6,46 @@ body {
 #first {
     height: 100vh;
     width: 100vw;
-    background-color: blue;
+    background-color: rgb(255, 191, 0);
+    background-image: url(../images/town_hero.gif);
+    background-position: bottom;
+    background-size: cover;
 }
+
 
 #second {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(255, 0, 85);
+    background-color: rgb(44, 50, 69);
+    box-shadow: -1px 2px 98px 108px rgba(44,50,69,1);
+    background-image: linear-gradient(rgba(44,50,69,1), rgb(0, 0, 0));;
+
+}
+
+
+#first_phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 100px;
+
 }
 
 
 
+#first_phone div:nth-child(1) {
+  color: white;
+  width: 450px;
+  
+}
+
+#coolmobil {
+  width: 200px;
+  background-color: blueviolet;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+}
 
 
 
@@ -98,7 +127,9 @@ footer p {
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: aquamarine;
+  background-color: rgb(59, 15, 15);
+  
+  
   }
 
 #apply {
