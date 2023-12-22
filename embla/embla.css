@@ -6,11 +6,23 @@ body {
 #first {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(255, 191, 0);
+    background-color: rgb(250, 252, 252);
+    
     background-image: url(../images/town_hero.gif);
     background-position: bottom;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+#first h1 {
+  font-family: helvetica;
+  font-size: 60px;
+}
+
+
+
 
 
 #second {
@@ -165,20 +177,22 @@ body {
   height: 200px;
   writing-mode: vertical-lr;
   cursor: pointer;
-
   transition: transform 0.5s ease;
+  font-size: 15px;
   
 }
 
-
+.rectangle:hover {
+  font-size: 16px;
+}
 
 
 .new-div {
   
   position: absolute;
   bottom: 60px;
-  width: 470px;
-  height: 260px;
+  width: 439px;
+  height: 220px;
   background-color: white;
   border: 1px solid black;
   
@@ -188,16 +202,26 @@ body {
 }
 
 #applyButton {
-  
-  color: red;
+  color: rgb(154, 12, 12);
   cursor: pointer;
   margin-right: 20px;
   font-size: 25px;
-
-
+  transition-duration: 0.4s;
 }
 
 #applyButton:hover {
   font-size: 27px;
 }
 
+
+
+#third {
+  background-color: chocolate;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+#third h1 {
+  margin: 0;
+}
