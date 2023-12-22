@@ -203,10 +203,68 @@ body {
 
 
 /* BOX 4 */
+#four {
+    background-image: url("hildas_images/background_hilda.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+}
+
+#background_evolution {
+    background-image: url("hildas_images/nedladdning.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    height: 700px;
+    width: 700px;
+}
+
+#paragraf5 {
+    font-size: 30px;
+    color: #575757;
+    margin-top: 200px;
+    margin-left: 150px;
+    border-bottom: 8px solid #575757;
+    text-align: center;
+}
+
+#paragraf5 h1 {
+    margin: 0;
+}
+
+#bounce-arrow4 {
+    width: 0;
+    height: 0;
+    left: 1150px;
+    margin: 20px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid rgb(0, 0, 0);
+    position: absolute;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 20px;
+    }
+}
 
 /* BOX 5 */
-#four {
+#five {
     height: 100vh;
     background-color: black;
 }
