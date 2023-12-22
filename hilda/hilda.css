@@ -203,10 +203,139 @@ body {
 
 
 /* BOX 4 */
+#four {
+    background-image: url("hildas_images/background_hilda.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+}
+
+#background_evolution {
+    background-image: url("hildas_images/nedladdning.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    height: 700px;
+    width: 700px;
+}
+
+#paragraf5 {
+    font-size: 30px;
+    color: #575757;
+    margin-top: 200px;
+    margin-left: 150px;
+    border-bottom: 8px solid #575757;
+    text-align: center;
+}
+
+#paragraf5 h1 {
+    margin: 0;
+}
+
+#bounce-arrow4 {
+    width: 0;
+    height: 0;
+    left: 1150px;
+    margin: 20px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid rgb(0, 0, 0);
+    position: absolute;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 20px;
+    }
+}
 
 /* BOX 5 */
-#four {
+#five {
     height: 100vh;
     background-color: black;
+}
+
+footer {
+    height: 120vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#photobooth {
+    width: 500px;
+    height: 700px;
+    transition-duration: 2s;
+    background-image: url(../images/phone_booth.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#photobooth:hover {
+    width: 960px;
+    height: 860px;
+}
+
+footer p {
+    color: rgba(245, 239, 229, 0.826);
+    font-size: 16px;
+    font-family: helvetica;
+    position: absolute;
+    top: 300px;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    10%,
+    90% {
+        opacity: 0.9;
+    }
+
+    20%,
+    80% {
+        opacity: 0.8;
+    }
+
+    30%,
+    70% {
+        opacity: 0.7;
+    }
+
+    40%,
+    60% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.blinking {
+    animation: blink 1s infinite;
+    /* Adjust the duration as needed */
 }

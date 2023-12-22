@@ -1,0 +1,122 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100%; /* Ensures the minimum height for the body is the full viewport */
+    overflow-x: hidden; /* Hides horizontal scrollbar */
+    overflow-y: auto; /* Enables vertical scrolling */
+    font-family: 'Bebas Neue', sans-serif; /* Applies the font globally */
+}
+
+.fullscreen-gif {
+    position: absolute; /* Changed from fixed to absolute */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Ensures the GIF only takes up the first viewport */
+    object-fit: cover;
+    z-index: -1;
+}
+
+#page2{
+    background-color: rgb(10, 10, 10)
+}
+
+.fullscreen-gif-2 {
+    position: absolute; /* Changed from fixed to absolute */
+    top: 0;
+    left: 50%;
+    right: 50%;
+    width: 50%;
+    height: 100vh; /* Ensures the GIF only takes up the first viewport */
+    object-fit: cover;
+    z-index: 3;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    animation: fadeIn 2s ease-out forwards; /* Run only once and end at the last keyframe */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+.scroll-down-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    color: white;
+    z-index: 2;
+    cursor: pointer; /* Indicates this is a clickable or interactive element */
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-20px); }
+}
+
+#page2 {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height of the viewport */
+    padding: 50px; /* Add some padding around the content */
+}
+
+.affordance-content {
+    width: 80%; /* Adjust as per your design */
+    display: flex;
+    justify-content: space-between; /* Space out the text and image */
+}
+
+.affordance-text {
+    flex: 1; /* Takes half of the available space */
+    padding-right: 20px; /* Spacing between text and image */
+}
+
+.affordance-image {
+    flex: 1; /* Takes half of the available space */
+    display: flex;
+    justify-content: center; /* Center align the image */
+}
+
+.affordance-image img {
+    max-width: 100%; /* Ensures the image is not bigger than its container */
+    height: auto;
+}
+
+#page1, #page2 {
+    min-height: 100vh; /* 100% of the viewport height */
+    width: 100%;
+    position: relative; /* This will help position inner elements */
+}
+
+#page3 {
+    background-color: black; /* Sets the background to black */
+    color: white; /* Sets the text color to white for contrast */
+    min-height: 100vh; /* Ensures the page takes up the full viewport height */
+    width: 100%;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    /* Add any additional styling as needed */
+}
+
+a{
+    color: white;
+}
+p{
+    color: white;
+}
