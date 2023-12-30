@@ -19,7 +19,7 @@ body {
 #first h1 {
   font-family: helvetica;
   font-size: 60px;
-  color: white;
+  color: rgb(240, 240, 240);
 }
 
 
@@ -32,6 +32,9 @@ body {
     background-color: rgb(44, 50, 69);
     box-shadow: -1px 2px 98px 108px rgba(44,50,69,1);
     background-image: linear-gradient(rgba(44,50,69,1), rgb(0, 0, 0));;
+    margin: auto;
+ 
+    
 
 }
 
@@ -47,17 +50,23 @@ body {
 
 
 #first_phone div:nth-child(1) {
-  color: white;
-  width: 450px;
+  color: rgb(219, 219, 219);
+  width: 550px;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 24px;
+  font-size: 17px;
+  margin-top: 150px;
+  margin-left: 50px;
   
 }
 
 #coolmobil {
-  width: 200px;
-  background-color: blueviolet;
-  height: 300px;
+  width: 400px;
+
+  height: 800px;
   background-position: center;
   background-size: cover;
+  background-image: url(../images/first_phone_o.png);
 }
 
 
