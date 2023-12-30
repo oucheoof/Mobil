@@ -65,4 +65,3 @@ const myChart = new Chart(ctx, {
         }
     }]
 });
-
