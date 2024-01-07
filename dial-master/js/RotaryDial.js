@@ -196,10 +196,10 @@ class RotaryDial {
 					url = 'hilda/hilda.html';
 					break;
 				case 3:
-					url = 'pontus/pontus.html';
+					url = 'stephen/stephen.html';
 					break;
 				case 4:
-					url = 'stephen/stephen.html';
+					url = 'pontus/pontus.html';
 					break;
 				// Add additional cases as needed
 			}

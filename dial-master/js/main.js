@@ -37,10 +37,10 @@ const checkAndOpenFile = function (number) {
             filePath = '../hilda/hilda.html';
             break;
         case '3':
-            filePath = '../pontus/pontus.html';
+            filePath = '../stephen/stephen.html';
             break;
         case '4':
-            filePath = '../stephen/stephen.html';
+            filePath = '../pontus/pontus.html';
             break;
         // Add more cases as needed
     }
