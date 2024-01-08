@@ -3,7 +3,7 @@
     --blackScreen: #161616;
     --whiteColor: rgb(225, 225, 225);
     --pinkColor: #D950EB;
-    --redColor: #F04878;
+    --redColor: #f31151;
 
 }
 
@@ -35,8 +35,11 @@ body {
 }
 
 #wrapper {
-    width: 90%;
-    box-shadow: 0 0 40px 20px var(--pinkColor);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
 }
 
 
@@ -54,43 +57,110 @@ body {
     flex-direction: column;
     gap: 200px;
 
+
 }
 
-.section1:hover {
-    box-shadow: 0 0 40px 50px var(--pinkColor);
-    transition: box-shadow 3s;
-}
+
 
 .section2 {
 
-    height: 150vh;
+    height: 100vh;
+    display: flex;
+
+
 }
+
+#section2top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+
+
+
+
+
+}
+
+
 
 
 
 .section3 {
-    height: 150vh;
-    background-color: var(--blackColor);
-    background-image: url(./images/jr-korpa-SFT9G3pAxLY-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
+
+    height: 100vh;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0.8;
+    transition: 1s;
 
 }
 
-.section3:hover {
-    box-shadow: 0 0 40px 50px var(--pinkColor);
-    transition: box-shadow 3s;
+.section3 .textitem {
+    font-size: 50px;
 }
 
-.section4 {
-    background-color: var(--blackColor);
-    height: 150vh;
+
+
+.section3 p {
+
+
+    color: var(--whiteColor);
+    font-size: 18px;
+    font-family: "orbitronbread";
+    flex-grow: 1;
+    padding: 20px;
+    width: 300px;
+    font-size: 10px;
+    transition: 1s;
+
 }
 
-.section4:hover {
-    box-shadow: 0 0 40px 50px var(--pinkColor);
-    transition: box-shadow 3s;
+.section3container:hover p {
+    opacity: 1;
+    font-size: 13px;
+    transition: 1s;
 }
+
+.section3container {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.section3container:hover {
+    flex-direction: row;
+    transition: 1s;
+    opacity: 1;
+    font-size: 18px;
+}
+
+.video-container {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+}
+
+#video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the video covers the entire container */
+}
+
+
+
+
+
+
 
 #phoneContainer {
     height: 600px;
@@ -161,52 +231,118 @@ body {
 /*section2*/
 
 .section2 {
-    height: 500px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.8);
+
+
 }
 
-.section2 .textContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 20px;
 
-    height: 200px;
-    width: 100%;
-    flex-wrap: wrap;
-}
 
-.textItem {
+.textitem {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 200px;
-    flex-grow: 1;
-    background-color: var(--redColor);
-    width: 450px;
+    flex-direction: column;
+    opacity: 0.85;
+    padding: 20px;
     font-family: "orbitronbread";
-    opacity: 0;
+    gap: 10px;
+    line-height: 1.5;
+    text-align: left;
+    transition: 1s;
     border-radius: 25px;
-    text-align: center;
+    width: 50%;
+    padding: 30px;
+    font-size: 18px;
+    color: var(--whiteColor);
 
+
+    margin: 40px;
+
+
+
+}
+
+.section2 .textitem:hover {
+
+    opacity: 1;
+}
+
+.section2 .p1 {
+
+    font-size: 0;
+}
+
+.section2 .p2 {
+
+    font-size: 0;
+}
+
+.section2 .p3 {
+
+    font-size: 0;
+}
+
+.section2 .textitem:hover .p1 {
+    font-size: 18px;
+}
+
+.section2 .textitem:hover .p2 {
+    font-size: 18px;
+}
+
+.section2 .textitem:hover .p3 {
+    font-size: 18px;
+
+}
+
+.section2 .textitem:hover {
+    font-size: 0;
+}
+
+
+.texticon {
+    height: 250px;
+    width: 250px;
+    box-shadow: 2px 2px 2px 2px var(--whiteColor);
+    border-radius: 50%;
+
+
+}
+
+.texticon:hover {
+    box-shadow: 10px 10px 10px 10px var(--whiteColor);
+    transition: 1s;
+    height: 300px;
+    width: 300px;
 }
 
 #image1 {
     background-image: url(./images/arm-removebg-preview.png);
-    height: 200px;
-    width: 200px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
+#image1:hover {
+    background-image: url(./images/smartwatch.jpeg);
+    transition: 1s;
+}
+
+#image2:hover {
+    background-image: url(./images/brainchip.jpeg);
+    transition: 1s;
+}
+
+#image3:hover {
+    background-image: url(./images/augglasses.jpeg);
+    transition: 1s;
+}
+
+
+
 #image2 {
     background-image: url(./images/brain-removebg-preview.png);
-    height: 200px;
-    width: 200px;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -215,18 +351,38 @@ body {
 
 #image3 {
     background-image: url(./images/eye-removebg-preview.png);
-    height: 200px;
-    width: 200px;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 
 }
 
-.textContainer:hover .textItem {
-    opacity: unset;
-    transition: 1s;
+#image4 {
+    background-image: url(./images/smartwatch.jpeg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
+
+#image5 {
+    background-image: url(./images/brainchip.jpeg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#image6 {
+    background-image: url(./images/augglasses.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
 
 /*FOOTER*/
 footer {
